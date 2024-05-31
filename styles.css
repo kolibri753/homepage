@@ -159,15 +159,20 @@ Contact info styles .contact-info__header,
   text-align: justify;
 }
 
+.skills {
+  margin: 0 -30px -33px -30px;
+  padding: 30px;
+  border-bottom: 3px solid var(--border-color);
+}
+
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__list {
+  padding-left: 0;
 }
 
 /* Experience and additional info styles  */
@@ -183,11 +188,40 @@ Contact info styles .contact-info__header,
   margin-bottom: 20px;
 }
 
+.experiences__header ~ .experiences__header {
+  margin-top: 20px;
+}
+
 .experiences__company-header-durability {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.experiences__company-description-text {
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.experiences__company-description-text > span {
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
+}
+
+.experiences__company-responsibilities {
+  color: var(--secondary-text-color);
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.experiences__company-github {
+  margin-top: 10px;
+  color: var(--secondary-text-color);
+}
+
+.experiences__company-github--link {
+  color: var(--primary-text-color);
 }
 
 .experiences__company-header-name {
@@ -223,6 +257,7 @@ Contact info styles .contact-info__header,
 
 .additional-info {
   flex: 1 1 40%;
+  padding: 0 30px;
 }
 
 .additional-info__education {
@@ -244,6 +279,8 @@ Contact info styles .contact-info__header,
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -264,4 +301,85 @@ Contact info styles .contact-info__header,
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.projects__header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  grid-column: 1 / -1;
+}
+
+.project {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.project:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project__name {
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.project__description {
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.project__technologies {
+  color: var(--text-decoration-color);
+  margin-bottom: 10px;
+}
+
+/* Certificates */
+.certification-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certification-link:hover .certification-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 20px; /* Adjust spacing between certification cards */
+}
+
+.certification-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card__speciality {
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.certification-card__durability {
+  color: var(--durability-text-color);
+}
+
+.certification-card__name {
+  color: var(--text-decoration-color);
+  margin-bottom: 10px;
 }
