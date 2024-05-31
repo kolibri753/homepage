@@ -50,25 +50,9 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
-  }
+/* Contact info styles  */
 
-  .contact_info_container {
-    align-items: center;
-  }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .experiences {
-    margin-right: 0;
-  }
-}
-Contact info styles .contact-info__header,
+.contact-info__header,
 .contact-info__sub-header {
   text-align: center;
 }
@@ -382,4 +366,37 @@ Contact info styles .contact-info__header,
 .certification-card__name {
   color: var(--text-decoration-color);
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .resume {
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .skills {
+    margin: 0px;
+    padding: 0 20px;
+    border-bottom: none;
+  }
+
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
+
+  .contact_info_container {
+    align-items: center;
+  }
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+  }
 }
