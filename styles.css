@@ -138,7 +138,17 @@ body {
 	fill: var(--text-decoration-color);
 }
 
-.intro_text {
+.intro__block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.highlighted-text {
+	color: var(--text-decoration-color);
+}
+
+.intro__text {
 	color: var(--secondary-text-color);
 	text-align: justify;
 }
